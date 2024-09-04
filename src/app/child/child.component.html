@@ -7,5 +7,6 @@
 
   <button (click)="ChildClick()">Child Button</button>
   <br />
-  Child value ={{childValue}}
+  {{childValue}}
+  Child value = <repeat-string [value]="childValue"></repeat-string>
 </fieldset>

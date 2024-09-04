@@ -1,0 +1,12 @@
+<p>track-by-demo works!</p>
+
+
+<button (click)="updateItems()">Add More</button>
+<!-- <div *ngFor="let item of items">
+  Apple {{item}}
+</div> -->
+<cdk-virtual-scroll-viewport itemSize="50" class="viewport">
+  <div *cdkVirtualFor="let item of items" class="item">
+    Apple {{item}}
+  </div>
+</cdk-virtual-scroll-viewport>
