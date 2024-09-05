@@ -4,11 +4,12 @@ import { ChildComponent } from './child/child.component';
 import { CommonModule } from '@angular/common';
 import { GlobalService } from './global.service';
 import { TrackByDemoComponent } from "./track-by-demo/track-by-demo.component";
+import { ObservablesDemoComponent } from "./observables-demo/observables-demo.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ChildComponent, CommonModule, TrackByDemoComponent],
+  imports: [RouterOutlet, ChildComponent, CommonModule, TrackByDemoComponent, ObservablesDemoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
