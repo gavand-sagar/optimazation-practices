@@ -1,14 +1,26 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GlobalService {
 
-  public user:BehaviorSubject<string> = new BehaviorSubject("admin")
+  private counterSubject: BehaviorSubject<number>;
+  public get counter$() {
+    return this.counterSubject.asObservable();
+  }
 
   constructor() {
-
+    this.counterSubject = new BehaviorSubject(0);
   }
+
+  incrementCounter() {
+    this.counterSubject.next(this.counterSubject.value + 1)
+  }
+
+  cancelAllSubscription() {
+    this.counterSubject.unsubscribe();
+  }
+
 }

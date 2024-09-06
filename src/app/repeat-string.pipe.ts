@@ -25,10 +25,10 @@ export class RepeatStringPipe{
    *
    */
   constructor(private service: GlobalService, private changeDetector: ChangeDetectorRef) {
-    this.service.user.subscribe(x => {
-      this.user = x;
-      this.changeDetector.detectChanges();
-    });
+    // this.service.user.subscribe(x => {
+    //   this.user = x;
+    //   this.changeDetector.detectChanges();
+    // });
   }
 
 
