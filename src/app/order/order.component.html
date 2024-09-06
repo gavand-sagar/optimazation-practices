@@ -1,6 +1,10 @@
 <p>order works!</p>
 
+<button appMyDebounceClick [debounceTime]="400" (debouceClick)="sendApiCall()">API CALL</button>
 {{this.result|async|json}}
+
+
+<p appMyDebounceClick [debounceTime]="400" (debouceClick)="testFunction()">THIS IS A TEST</p>
 
 <!-- <button (click)="SubMe()">SubscribeMe</button>
 <button (click)="UnSubMe()">Un-SubscribeMe</button>

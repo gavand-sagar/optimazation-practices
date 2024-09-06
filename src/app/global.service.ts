@@ -12,10 +12,11 @@ export class GlobalService {
   }
 
   constructor() {
-    let value = localStorage && localStorage.getItem("counter") ? Number(localStorage.getItem("counter")) : 0
+    // let value = localStorage && localStorage.getItem("counter") ? Number(localStorage.getItem("counter")) : 0
+    let value = 0;
     this.counterSubject = new BehaviorSubject(value);
-    this.counterSubject.subscribe(x=>{
-      localStorage.setItem("counter",x.toString())
+    this.counterSubject.subscribe(x => {
+      localStorage.setItem("counter", x.toString())
     })
   }
 
