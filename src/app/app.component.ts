@@ -9,13 +9,14 @@ import { SubjectDemoComponent } from "./subject-demo/subject-demo.component";
 import { OrderComponent } from "./order/order.component";
 import { CartComponent } from "./cart/cart.component";
 import { ObservableCombineAndForkComponent } from "./observable-combine-and-fork/observable-combine-and-fork.component";
+import { DecoratorsDemoComponent } from "./decorators-demo/decorators-demo.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ChildComponent, CommonModule,
     TrackByDemoComponent, ObservablesDemoComponent,
-    SubjectDemoComponent, OrderComponent, CartComponent, ObservableCombineAndForkComponent],
+    SubjectDemoComponent, OrderComponent, CartComponent, ObservableCombineAndForkComponent, DecoratorsDemoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
