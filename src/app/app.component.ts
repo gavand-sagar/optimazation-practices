@@ -8,14 +8,14 @@ import { ObservablesDemoComponent } from "./observables-demo/observables-demo.co
 import { SubjectDemoComponent } from "./subject-demo/subject-demo.component";
 import { OrderComponent } from "./order/order.component";
 import { CartComponent } from "./cart/cart.component";
+import { ObservableCombineAndForkComponent } from "./observable-combine-and-fork/observable-combine-and-fork.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, ChildComponent, CommonModule,
     TrackByDemoComponent, ObservablesDemoComponent,
-    SubjectDemoComponent, OrderComponent, CartComponent,
-  ],
+    SubjectDemoComponent, OrderComponent, CartComponent, ObservableCombineAndForkComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
